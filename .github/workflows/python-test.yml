@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Instalar Python
-
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -21,6 +20,7 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "17"
-          run: |
-            python -c "print('Java version')"
-            java -version
+      - name: Verificar versión de Java
+        run: |
+          python -c "print('Java version')"
+          java -version
