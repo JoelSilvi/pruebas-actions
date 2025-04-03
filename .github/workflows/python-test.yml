@@ -15,4 +15,4 @@ jobs:
         with:
           python-version: "3.x"
       - name: pruebas de texto
-        run: python -c print(Mensaje desde actions)
+        run: python -c "print('Mensaje desde actions')"
