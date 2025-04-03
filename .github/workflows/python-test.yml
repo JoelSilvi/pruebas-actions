@@ -16,3 +16,11 @@ jobs:
           python-version: "3.x"
       - name: pruebas de texto
         run: python -c "print('Mensaje desde actions')"
+      - name: Instalar Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "17"
+          run: |
+            python -c "print('Java version')"
+            java -version
