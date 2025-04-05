@@ -30,3 +30,8 @@ jobs:
         run: |
           python -c "print('Java version:')"
           java -version
+
+      - name: Verificar versión de Maven
+        run: |
+          python -c "print('Maven version:')"
+          mvn -v
