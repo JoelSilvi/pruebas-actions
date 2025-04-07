@@ -39,7 +39,9 @@ jobs:
           mvn -v
 
   composite-action:
+    name: Composite Action
     runs-on: ubuntu-latest
+    needs: etapa-java
     steps:
       - uses: JoelSilvi/composite/.github/actions/new-prueba@main
         with:
